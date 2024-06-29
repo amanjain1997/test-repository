@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+  namespace: default
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Sample Page</title>
+    </head>
+    <body>
+        <h1>Hello, this is a sample static page served by Nginx!</h1>
+    </body>
+    </html>
+
